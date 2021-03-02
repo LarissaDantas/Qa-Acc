@@ -1,0 +1,196 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 15,
+        "name": ": Vehicle Insurance Application",
+        "description": "",
+        "id": "sampleapp;:-vehicle-insurance-application;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 19196371700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I make a vehicle insurance request",
+            "match": {
+              "location": "Steps.ImakeAVehicleInsuranceRequest()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9820810600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I fill out the Insert Vehicle Data form 100, 45000, 1000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100",
+                  "offset": 40
+                },
+                {
+                  "val": "45000",
+                  "offset": 45
+                },
+                {
+                  "val": "1000",
+                  "offset": 52
+                }
+              ],
+              "location": "Steps.iFillOutTheInsertVehicleDataForm(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1223209200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I fill out the Enter Insurance Data form Camila, Silva, 10/29/1993, Brazil, 09210200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Camila",
+                  "offset": 41
+                },
+                {
+                  "val": "Silva",
+                  "offset": 49
+                },
+                {
+                  "val": "10/29/1993",
+                  "offset": 56
+                },
+                {
+                  "val": "Brazil",
+                  "offset": 68
+                },
+                {
+                  "val": "09210200",
+                  "offset": 76
+                }
+              ],
+              "location": "Steps.iFillOutTheEnterInsuranceDataFormFirstNameLastNameCountryZipCode(String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 874957300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I fill out the Enter Product Data form 04/27/2021",
+            "match": {
+              "arguments": [
+                {
+                  "val": "04/27/2021",
+                  "offset": 39
+                }
+              ],
+              "location": "Steps.iFillOutTheEnterProductDataForm(String)"
+            },
+            "matchedColumns": [
+              8
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 226949700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I fill out the Select Price Option form",
+            "match": {
+              "location": "Steps.iFillOutTheSelectPriceOptionForm()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1170540400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I fill out the Send Quote form camilla.silva@gmail.com, camillaSilva, 123@Ab5678, 123@Ab5678",
+            "match": {
+              "arguments": [
+                {
+                  "val": "camilla.silva@gmail.com",
+                  "offset": 31
+                },
+                {
+                  "val": "camillaSilva",
+                  "offset": 56
+                },
+                {
+                  "val": "123@Ab5678",
+                  "offset": 70
+                },
+                {
+                  "val": "123@Ab5678",
+                  "offset": 82
+                }
+              ],
+              "location": "Steps.iFillOutTheSendQuoteFormEmailPhoneUsarnamePasswordConfirmPassword(String,String,String,String)"
+            },
+            "matchedColumns": [
+              9,
+              10,
+              11,
+              12
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9286060900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I see the message Sending e-mail success!",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sending e-mail success!",
+                  "offset": 18
+                }
+              ],
+              "location": "Steps.iSeeTheMessageMessage(String)"
+            },
+            "matchedColumns": [
+              13
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "SampleApp",
+    "description": "",
+    "id": "sampleapp",
+    "keyword": "Feature",
+    "uri": "src/test/resources/sampleapp.feature"
+  }
+]
